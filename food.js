@@ -55,7 +55,8 @@ function showCatData(catFoodData) {
   var foodDataCat = "";
 
    for (var a = 0; a < catbrands.length; a++) {
-   foodDataCat += `<h2>Brand Name: ${catbrands[a].name}</h2>`
+   foodDataCat += `<h2>Brand Name: ${catbrands[a].name}</h2>
+                  <h3>Breeds: ${catbrands[a].breeds}</h3>`
      var cattypes = catbrands[a].types;
         for (var b = 0; b < cattypes.length; b++) {
           foodDataCat += `<h3>Type: ${cattypes[b].type}</h3>`
